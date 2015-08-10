@@ -1,0 +1,17 @@
+#!/bin/sh
+
+for arg in $@
+do
+    echo "====== testing $arg ======"
+    ./$arg.sh > $arg.output
+    
+    # answer generation.
+    ./$arg.sh > $arg.expected
+
+    if ! diff $arg.output $arg.expected > /dev/null
+    then
+        echo "== [ERROR] $arg.output and $arg.expected did not match. =="
+        exit
+    fi
+    echo "===== test $arg passed! ====="
+done
