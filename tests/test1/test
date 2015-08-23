@@ -1,0 +1,16 @@
+#!/bin/sh
+
+for arg in $@
+do
+    echo "====== testing $arg ======"
+    sh ./$arg.sh marks.txt "testfile_file has space in name.2041" > $arg.output
+    # answer generation.
+    sh ./$arg.sh marks.txt "testfile_file has space in name.2041" > $arg.expected
+
+    if ! diff $arg.output $arg.expected > /dev/null
+    then
+        echo "== [ERROR] $arg.output and $arg.expected did not match. =="
+        exit
+    fi
+    echo "===== test $arg passed! ====="
+done

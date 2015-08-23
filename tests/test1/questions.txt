@@ -1,0 +1,18 @@
+Tests can be run by typing "./test <question_number>( <question_number>)*", e.g. "./test 1" or "./test 1 2".
+
+Your tests will store your output in "<question_number>.output", and compared against "<question_number>.expected".
+
+All .sh files are executeable.
+
+=== The following involve using marks.txt. This is provided, and is tab separated.
+Q1) In "1.sh", write a pipeline that will sort students in terms of number of marks
+Q2) In "2.sh", write a pipeline that will find how many people got each mark. Marks sorted in numerical order.
+Q3) In "3.sh", write a pipeline that will find all the people with an odd numbered mark
+Q4) In "4.sh", write a pipeline that will find all peoples names which does not start with two consonants.
+Q5) In "5.sh", write a pipeline that will find all peoples names which contain at most 9 vowels. 
+Q6) In "6.sh", write a pipeline that will tell you the seven lowest marks that only one person has gotten.
+
+=== The following involve writing your own shell scripts/pipelines.
+Q7) In "7.sh", write a shell script that will print out the first line of all files in the current directory ending with ".2041" into stdout.
+Q8) In "8.sh", write a shell script that will print out the names of files and number of lines in them that contain the word "boohoo" in the "q8" directory. Hint: use the output of wc -l.
+Q9) In "9.sh", write a shell script that, for each line in the file specified in the command line, switches the first vowel in that line with the second vowel in that line, into standard output. (e.g. "./9.sh a.txt b.txt" will read all lines from [ab].txt, and output all lines in them with first and second vowel switched. Case is ignored.
