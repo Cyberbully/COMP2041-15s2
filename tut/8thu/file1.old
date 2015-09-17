@@ -1,0 +1,9 @@
+#ifndef _STDIO_H
+
+#if !defined __need_FILE && !defined __need___FILE
+# define _STDIO_H   1
+/* Copyright (C) 1991-1993,1995-2006,2007,2009 Free Software Foundation, Inc.
+   This file is part of the GNU C Library.
+
+      The GNU C Library is free software; you can redistribute it and/or
+         modify it under the terms of the GNU Lesser General Public
